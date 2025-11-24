@@ -7,4 +7,4 @@ KiCad/TrailTrueBypass_PIC-backups
 _build
 cmake
 out
-write_hex.ps1
+.ssh/
