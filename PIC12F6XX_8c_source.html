@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('PIC12F6XX_8c_source.html',''); initRes
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// ここは本当に仮の値で、初期値はEEPROMに設定することで変更できる（main.c）</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="PIC12F6XX_8c.html#a0a158f4c519e72d21b1d4f18c31fe16c">   19</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="PIC12F6XX_8c.html#a0a158f4c519e72d21b1d4f18c31fe16c">initState</a> = <span class="keyword">false</span>;  </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="PIC12F6XX_8c.html#ad721e42675ab53a59213ba54882e3e0a">   20</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="PIC12F6XX_8c.html#ad721e42675ab53a59213ba54882e3e0a">momentary</a> = <span class="keyword">false</span>;  </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="PIC12F6XX_8c.html#a20f65ad56869382ed8681b9dd1aa85d6">   21</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="PIC12F6XX_8c.html#a20f65ad56869382ed8681b9dd1aa85d6">timing</a> = <span class="keyword">false</span>;     </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="PIC12F6XX_8c.html#a20f65ad56869382ed8681b9dd1aa85d6">   21</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="PIC12F6XX_8c.html#a20f65ad56869382ed8681b9dd1aa85d6">timing</a> = <span class="keyword">false</span>;  </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="PIC12F6XX_8c.html#a6933d56410a79bc99303c7f4f54521ca">   29</a></span>uint8_t <a class="code hl_function" href="PIC12F6XX_8c.html#a6933d56410a79bc99303c7f4f54521ca">eepRead</a>(uint8_t adress) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  EEADR = adress;  <span class="comment">// アドレスを指定</span></div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('PIC12F6XX_8c_source.html',''); initRes
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="comment">//=== interruptのための行ここから ===//</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  INTCON |= 0b10001000;  <span class="comment">// GIE=1, GPIE=1 (GPIO割り込み有効)</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  IOC3 = 1;              <span class="comment">// GP3のピン変化割り込みを有効化</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  di();                  <span class="comment">// とは言ったものの、bypass関数までは割り込み禁止</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  di();  <span class="comment">// とは言ったものの、bypass関数までは割り込み禁止</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="comment">//=== interruptのための行ここまで ===//</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_function" href="common_8c.html#a70f6100e4f948b633c942e5c6e4c209a">setInitState</a>();</div>
