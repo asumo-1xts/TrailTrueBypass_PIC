@@ -1,5 +1,7 @@
 <h1 align="center">
+
 TrailTrueBypass_PIC
+
 </h1>
 
 <div align="center">
@@ -7,8 +9,7 @@ TrailTrueBypass_PIC
 **A project for a trail-bypass with an DIP8 PIC microcontroller.**
 
 [![KiBot](https://github.com/aSumo-1xts/TrailTrueBypass_PIC/actions/workflows/kibot.yml/badge.svg)](https://github.com/aSumo-1xts/TrailTrueBypass_PIC/actions/workflows/kibot.yml)
-[![Format code](https://github.com/asumo-1xts/TrailTrueBypass_PIC/actions/workflows/format.yml/badge.svg)](https://github.com/asumo-1xts/TrailTrueBypass_PIC/actions/workflows/format.yml)
-[![Doxygen](https://github.com/aSumo-1xts/TrailTrueBypass_PIC/actions/workflows/doxygen.yml/badge.svg)](https://github.com/aSumo-1xts/TrailTrueBypass_PIC/actions/workflows/doxygen.yml)
+[![Format | Docs](https://github.com/asumo-1xts/TrailTrueBypass_PIC/actions/workflows/format-docs.yml/badge.svg)](https://github.com/asumo-1xts/TrailTrueBypass_PIC/actions/workflows/format-docs.yml)
 
 [![KiCad](https://img.shields.io/badge/-%23314CB0?style=flat&logo=kicad&logoColor=white&logoSize=auto)](https://downloads.kicad.org/kicad/windows/explore/stable)
 [![XC8](https://img.shields.io/badge/XC8-%23A8B9CC?style=flat&logo=c&logoColor=white)](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
